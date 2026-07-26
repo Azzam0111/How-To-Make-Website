@@ -7,3 +7,5 @@ ini website nya gabungan dari
 keren yak aku sampe otodidak belajar dasar javaScripr dulu loh
 intinya gtu aku juga up file ke netifly juga jadi bisa kalian buka😎
 
+ini kalo mau akses web ku free
+websiteku-azzam.netlify.app

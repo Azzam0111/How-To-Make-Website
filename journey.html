@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story - websiteku</title>
+    <link rel="stylesheet" href="journey.css" />
+</head>
+<body>
+    <header style="background-color: #1e3a5f; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+        <h1 style="margin: 0; font-size: 24px;">My Journey</h1>
+        <nav>
+            <a href="#biodata" style="color: white; margin-right: 15px; text-decoration: none;">Beranda</a>
+            <a href="#proyek" style="color: white; margin-right: 15px; text-decoration: none;">Proyek</a>
+            <a href="#kontak" style="color: white; text-decoration: none;">Kontak</a>
+        </nav>
+    </header>
+    <div style="text-align: center; margin: 15px 0;">
+        <label for="progress-koding">Progres buat website:</label><br>
+        <progress id="progress-koding" value="87" max="100" style="width: 80%; height: 20px;"></progress>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: sans-serif;">
+        
+        
+        <section id="Biodata" style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 3px;" >
+            <figure style="margin: 0; text-align: center; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+                <img src="https://pps.whatsapp.net/v/t61.24694-24/658460192_1334275811552602_6668667499443135470_n.jpg?ccb=11-4&oh=01_Q5Aa5AGrGwNbm18WqzbS76bX4eDqPQ9D8w_rtDVS-5hka8cKJw&oe=6A71CBE3&_nc_sid=5e03e0&_nc_cat=102" alt="Foto Profil" style="width: 200px; height: 200px; object-fit:cover;" />
+                <figcaption style="margin-top: 5px; font-style: italic; color: #555;">
+                        Foto kecilku<br>
+                    </figcaption>
+            </figure>
+            <div class="konten-kanan">
+                <div style="flex: 1; min-width: 250px;">
+                    <h2 style="margin-top: 0;">hai nama ku Azzam Yafi</h2>
+                    <p>Selamat datang di jurnal pertama ku, saya sedang membuat website sederhana. </p>
+                </div>
+
+            <h3>Hobi dan Proyek favoritku</h3>
+            <details style="border: 10px solid #ddd; padding: 10px; margin-bottom: 10px;background-color: #fdfdfd;">
+                <summary style="cursor: pointer; font-weight: bold;padding: 5px;">Hobi hobi ku<span style="color: #666; font-family: monospace; font-weight: normal;"></span></summary>
+                <p>Hobi saya termasuk membaca buku, bermain game, dan menjelajahi alam</p>
+                <p>Ini adalah proyek pertama saya dalam membuat website sederhana. Saya belajar HTML, CSS, dan JavaScript untuk membangun halaman web ini.</p>
+            <ul>
+                <li>HTML untuk struktur halaman</li>
+                <li>CSS untuk styling</li>
+                <li>JavaScript untuk interaktivitas</li>
+            </ul>
+            </details>
+
+            <h4 style = "margin-top:10px; margin-bottom: 5px;">Game favorit tahun ini</h4>
+            <ol style = "padding-left: 20px; margin-top: 0; line-height: 1.6;">
+                <li>Mobile Legends<b> - Seru Banget Cuma Ga Bisa Main Sama Temen</b></li>
+                <li>Roblox - Blox Fruit<b> - Jujur Ini Game Yang Paling Seru Buat Saya Sampe-Sampe Buat Laptopku freeze</b></li>
+            </ol>
+
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h3>berikan nilai pada web saya</h3>
+            <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="183cd385-d48d-4699-84bb-ee27254d5de9">
+
+
+
+                <div>
+                <label for="name" style=" display:inline-block; width: 150px; vertical-align: top;">Nama Kamu:</label>
+                <input type="text" id="name" name="name" required style="padding: 5px; width: 200px;">
+                </div>
+                
+                <div>
+                    <label for="pesan" style="display: inline-block; width: 150px; vertical-align: top;">Pesan:</label>
+                    <textarea id="pesan" rows="2" style="padding: 5px; width: 200px; resize: vertical;"></textarea>
+                </div>
+
+                <div>
+                    <label for="rating" style="display: inline-block; width:220px;">Seberapa keren web ini?</label><br>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="8" oninput= "this.nextElementSibling.value = this.value" style="width: 200px;">
+                    <output style="font-weight: bold; border: 1px solid #ccc; padding: 2px 10px; margin-left: 10px;">8</output>
+                    </label>
+                </div>
+                
+                <button type="submit">Kirim</button>
+
+            </form>
+        </section>
+    
+    </main>
+    <footer style="background-color: #1e3a5f; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-family: sans-serif;">
+        <p style margin:0; >&copy; 2024 Azzam Yafi. All rights reserved.</p>
+        <div style=" text-align:right;"    >
+            <label style="font-size: 14px; display:block; margin-bottom: 5px;">Musik pengantar - Teh Hijau</label>
+            <audio controls style="height: 30px;">
+                <source src="tehhijau.mp3" type="audio/mpeg">
+
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </footer>
+
+<button id="btnBackToTop" onclick="tombolKeAtas()" title="Kembali ke atas">▲</button>
+
+<script>
+    let tombolTop = document.getElementById("btnBackToTop");
+    window.onscroll = function() {deteksiScroll()};
+
+    function deteksiScroll(){
+        if (window.scrollY > 20|| document.documentElement.scrollTop > 20) {
+            tombolTop.style.display = "block";
+        } else {
+            tombolTop.style.display = "none";
+        }
+    }
+
+    function tombolKeAtas(){
+        window.scrollTo({
+            top: 0,
+            behavior :"smooth"
+        });
+    }
+</script>
+</body>
+</html>
